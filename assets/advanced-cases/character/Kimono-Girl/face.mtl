@@ -1,0 +1,106 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "472c676f-9f77-4c8d-b550-17825aa0176b",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {
+      "USE_BACK_LIT": true,
+      "USE_PREINTEGRATED_SKIN": true,
+      "USE_NORMAL_MAP": true,
+      "USE_ALBEDO_MAP": true,
+      "USE_DETAILED_NORMAL_MAP": true,
+      "USE_PBR_MAP": true
+    },
+    {},
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "mainColor": {
+        "__type__": "cc.Color",
+        "r": 224,
+        "g": 220,
+        "b": 217,
+        "a": 255
+      },
+      "roughness": 1,
+      "mainTexture": {
+        "__uuid__": "3bccd5ab-9049-40e9-b782-ac8b82b0e56f@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "166b6169-82ed-41c0-92b5-d74887f63039@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "detailedNormalMap": {
+        "__uuid__": "d54cdcee-13a3-4471-b5bb-af98f3835ec5@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "detailedNormalMaskMap": {
+        "__uuid__": "e031b9e9-7cc9-4eb6-b333-25c22163784b@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "pbrMap": {
+        "__uuid__": "31af96f9-874d-4006-b60f-b3c908468374@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "preIntegratedSkinMap": {
+        "__uuid__": "b078dcad-656d-4ba3-b76e-70c88e63e045@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "sssCurvatureMap": {
+        "__uuid__": "1717e9e1-547b-4b91-b1af-0411a88cbda4@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "sssCurvature": 0.16,
+      "sssColoration": 7.12,
+      "cavityMap": {
+        "__uuid__": "60191d43-c9c1-483c-8864-d1de20e10bf0@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "maskMap": {
+        "__uuid__": "ffc297e3-c8d4-45d0-b3bd-b5b96a57a40d@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "thickness": 0.7,
+      "extinction": 5.351
+    },
+    {},
+    {}
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "ver": "2.4.0",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "18a4e952-e7f3-4983-96ea-b3b4223c0447",
+  "files": [],
+  "subMetas": {
+    "e2349": {
+      "importer": "gltf-mesh",
+      "uuid": "18a4e952-e7f3-4983-96ea-b3b4223c0447@e2349",
+      "displayName": "",
+      "id": "e2349",
+      "name": "Mesh.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "18a4e952-e7f3-4983-96ea-b3b4223c0447@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b541a": {
+      "importer": "gltf-scene",
+      "uuid": "18a4e952-e7f3-4983-96ea-b3b4223c0447@b541a",
+      "displayName": "",
+      "id": "b541a",
+      "name": "fabricball.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "allowMeshDataAccess": true,
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "18a4e952-e7f3-4983-96ea-b3b4223c0447@b541a",
+    "assetFinder": {
+      "meshes": [
+        "18a4e952-e7f3-4983-96ea-b3b4223c0447@e2349"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "18a4e952-e7f3-4983-96ea-b3b4223c0447@8d883"
+      ],
+      "scenes": [
+        "18a4e952-e7f3-4983-96ea-b3b4223c0447@b541a"
+      ]
+    },
+    "ignoreOriginalImageLocation": false
+  }
+}

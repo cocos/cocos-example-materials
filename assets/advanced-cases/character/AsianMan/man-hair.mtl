@@ -1,0 +1,244 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "fc0ce5f8-063d-42da-b13a-2fad25abb951",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {
+      "USE_NORMAL_MAP": true,
+      "USE_ALBEDO_MAP": true,
+      "USE_OCCLUSION_MAP": true,
+      "USE_ALPHA_TEST": true,
+      "USE_TRANSPRENCY_MAP": true
+    },
+    {
+      "USE_TRANSPARENCY_PASS_BACK": true,
+      "USE_NORMAL_MAP": true,
+      "USE_ALBEDO_MAP": true,
+      "USE_OCCLUSION_MAP": true,
+      "USE_ALPHA_TEST": true,
+      "USE_TRANSPRENCY_MAP": true,
+      "INVERSE_ALPHA_TEST": true
+    },
+    {
+      "USE_TRANSPARENCY_PASS_FRONT": true,
+      "USE_NORMAL_MAP": true,
+      "USE_ALBEDO_MAP": true,
+      "USE_OCCLUSION_MAP": true,
+      "USE_ALPHA_TEST": true,
+      "USE_TRANSPRENCY_MAP": true,
+      "INVERSE_ALPHA_TEST": true
+    },
+    {},
+    {
+      "INVERSE_ALPHA_TEST": true
+    },
+    {
+      "INVERSE_ALPHA_TEST": true
+    },
+    {},
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "alphaThreshold": 0.75,
+      "occlusion": 1,
+      "roughness": 0.36,
+      "specularIntensity": 0.03,
+      "normalStrength": 1,
+      "mainTexture": {
+        "__uuid__": "30524788-7b5e-4fa6-9162-b0f8644350be@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "transparencyMap": {
+        "__uuid__": "35c070b6-0f6f-4aff-81c0-ad4e7ac8a967@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "d382582c-6da3-4a91-ba02-cb1867530b8a@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "occlusionMap": {
+        "__uuid__": "5600f531-4002-4d46-be27-4f71b5e0c1da@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "extinction": 10
+    },
+    {
+      "occlusion": 1,
+      "roughness": 0.29,
+      "specularIntensity": 0.032,
+      "normalStrength": 1,
+      "mainTexture": {
+        "__uuid__": "30524788-7b5e-4fa6-9162-b0f8644350be@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "transparencyMap": {
+        "__uuid__": "35c070b6-0f6f-4aff-81c0-ad4e7ac8a967@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "d382582c-6da3-4a91-ba02-cb1867530b8a@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "occlusionMap": {
+        "__uuid__": "5600f531-4002-4d46-be27-4f71b5e0c1da@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "extinction": 10
+    },
+    {
+      "occlusion": 1,
+      "roughness": 0.29,
+      "specularIntensity": 0.032,
+      "normalStrength": 1,
+      "mainTexture": {
+        "__uuid__": "30524788-7b5e-4fa6-9162-b0f8644350be@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "transparencyMap": {
+        "__uuid__": "35c070b6-0f6f-4aff-81c0-ad4e7ac8a967@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "d382582c-6da3-4a91-ba02-cb1867530b8a@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "occlusionMap": {
+        "__uuid__": "5600f531-4002-4d46-be27-4f71b5e0c1da@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "extinction": 10
+    },
+    {},
+    {
+      "alphaThreshold": 0.75,
+      "occlusion": 1,
+      "roughness": 0.36,
+      "specularIntensity": 0.05,
+      "normalStrength": 1,
+      "mainTexture": {
+        "__uuid__": "30524788-7b5e-4fa6-9162-b0f8644350be@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "transparencyMap": {
+        "__uuid__": "35c070b6-0f6f-4aff-81c0-ad4e7ac8a967@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "d382582c-6da3-4a91-ba02-cb1867530b8a@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "occlusionMap": {
+        "__uuid__": "5600f531-4002-4d46-be27-4f71b5e0c1da@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "extinction": 10
+    },
+    {
+      "alphaThreshold": 0.75,
+      "occlusion": 1,
+      "roughness": 0.36,
+      "specularIntensity": 0.05,
+      "normalStrength": 1,
+      "mainTexture": {
+        "__uuid__": "30524788-7b5e-4fa6-9162-b0f8644350be@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "transparencyMap": {
+        "__uuid__": "35c070b6-0f6f-4aff-81c0-ad4e7ac8a967@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "d382582c-6da3-4a91-ba02-cb1867530b8a@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "occlusionMap": {
+        "__uuid__": "5600f531-4002-4d46-be27-4f71b5e0c1da@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "extinction": 10
+    },
+    {},
+    {}
+  ]
+}

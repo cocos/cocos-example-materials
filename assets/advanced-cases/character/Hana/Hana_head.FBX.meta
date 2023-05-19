@@ -1,0 +1,306 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb",
+  "files": [],
+  "subMetas": {
+    "79420": {
+      "importer": "texture",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@79420",
+      "displayName": "",
+      "id": "79420",
+      "name": "BH_hairstyle_Albedo_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@e8d76"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a391a": {
+      "importer": "gltf-mesh",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@a391a",
+      "displayName": "",
+      "id": "a391a",
+      "name": "Hana_head_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9228d": {
+      "importer": "gltf-embeded-image",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@9228d",
+      "displayName": "",
+      "id": "9228d",
+      "name": "FaceColor_MAIN_LOD_1.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e8d76": {
+      "importer": "gltf-embeded-image",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@e8d76",
+      "displayName": "",
+      "id": "e8d76",
+      "name": "BH_hairstyle_Albedo_1.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "9543b": {
+      "importer": "texture",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@9543b",
+      "displayName": "",
+      "id": "9543b",
+      "name": "FaceColor_MAIN_LOD_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@9228d"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3e01f": {
+      "importer": "gltf-material",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@3e01f",
+      "displayName": "",
+      "id": "3e01f",
+      "name": "face4.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9e332": {
+      "importer": "gltf-material",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@9e332",
+      "displayName": "",
+      "id": "9e332",
+      "name": "water_out2.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d5126": {
+      "importer": "gltf-material",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@d5126",
+      "displayName": "",
+      "id": "d5126",
+      "name": "iris1.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a35a0": {
+      "importer": "gltf-material",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@a35a0",
+      "displayName": "",
+      "id": "a35a0",
+      "name": "water_in.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b9b87": {
+      "importer": "gltf-material",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@b9b87",
+      "displayName": "",
+      "id": "b9b87",
+      "name": "hair_3.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d459a": {
+      "importer": "gltf-material",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@d459a",
+      "displayName": "",
+      "id": "d459a",
+      "name": "hair_2.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1e9e4": {
+      "importer": "gltf-material",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@1e9e4",
+      "displayName": "",
+      "id": "1e9e4",
+      "name": "hair_1.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ce466": {
+      "importer": "gltf-material",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@ce466",
+      "displayName": "",
+      "id": "ce466",
+      "name": "brow3.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9236f": {
+      "importer": "gltf-material",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@9236f",
+      "displayName": "",
+      "id": "9236f",
+      "name": "eyelashes1.material",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73cff": {
+      "importer": "gltf-scene",
+      "uuid": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@73cff",
+      "displayName": "",
+      "id": "73cff",
+      "name": "Hana_head.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "FaceColor_MAIN_LOD_1",
+        "uri": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@9228d"
+      },
+      {
+        "name": "BH_hairstyle_Albedo_1",
+        "uri": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@e8d76"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@73cff",
+    "assetFinder": {
+      "meshes": [
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@a391a"
+      ],
+      "skeletons": [],
+      "textures": [
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@9543b",
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@79420"
+      ],
+      "materials": [
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@3e01f",
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@9e332",
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@d5126",
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@a35a0",
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@b9b87",
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@d459a",
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@1e9e4",
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@ce466",
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@9236f"
+      ],
+      "scenes": [
+        "f9ca58bd-3a28-43da-8ce6-3bba8d0558bb@73cff"
+      ]
+    }
+  }
+}

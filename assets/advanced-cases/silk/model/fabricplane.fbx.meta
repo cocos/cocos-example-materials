@@ -1,0 +1,81 @@
+{
+  "ver": "2.4.0",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "26e86ee2-ba28-4fa3-adde-945f985e091d",
+  "files": [],
+  "subMetas": {
+    "db241": {
+      "importer": "gltf-mesh",
+      "uuid": "26e86ee2-ba28-4fa3-adde-945f985e091d@db241",
+      "displayName": "",
+      "id": "db241",
+      "name": "Blanket:Mesh.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "26e86ee2-ba28-4fa3-adde-945f985e091d@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f5d6f": {
+      "importer": "gltf-scene",
+      "uuid": "26e86ee2-ba28-4fa3-adde-945f985e091d@f5d6f",
+      "displayName": "",
+      "id": "f5d6f",
+      "name": "fabricplane.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "allowMeshDataAccess": true,
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "26e86ee2-ba28-4fa3-adde-945f985e091d@f5d6f",
+    "assetFinder": {
+      "meshes": [
+        "26e86ee2-ba28-4fa3-adde-945f985e091d@db241"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "26e86ee2-ba28-4fa3-adde-945f985e091d@8d883"
+      ],
+      "scenes": [
+        "26e86ee2-ba28-4fa3-adde-945f985e091d@f5d6f"
+      ]
+    },
+    "ignoreOriginalImageLocation": false
+  }
+}

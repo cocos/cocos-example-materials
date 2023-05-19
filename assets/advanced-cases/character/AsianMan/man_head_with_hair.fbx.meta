@@ -1,0 +1,339 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e",
+  "files": [],
+  "subMetas": {
+    "75667": {
+      "importer": "texture",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@75667",
+      "displayName": "",
+      "id": "75667",
+      "name": "man_hair_card_2_Alpha_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/advanced-cases/character/AsianMan/hair textures/man hair card 2-Alpha.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "77666": {
+      "importer": "texture",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@77666",
+      "displayName": "",
+      "id": "77666",
+      "name": "brow_transparent_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/advanced-cases/character/AsianMan/textures/brow_transparent.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6306d": {
+      "importer": "gltf-mesh",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@6306d",
+      "displayName": "",
+      "id": "6306d",
+      "name": "head2_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4e1c4": {
+      "importer": "gltf-embeded-image",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@4e1c4",
+      "displayName": "",
+      "id": "4e1c4",
+      "name": "man_Occlusion_1.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "0ab21": {
+      "importer": "texture",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@0ab21",
+      "displayName": "",
+      "id": "0ab21",
+      "name": "FaceBaseColor_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/advanced-cases/character/AsianMan/textures/FaceBaseColor.tga"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "389ee": {
+      "importer": "texture",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@389ee",
+      "displayName": "",
+      "id": "389ee",
+      "name": "man_Occlusion_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "4220e9ab-1452-493e-9be7-58b91c00079e@4e1c4"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e0eb6": {
+      "importer": "texture",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@e0eb6",
+      "displayName": "",
+      "id": "e0eb6",
+      "name": "man_hair_card_2_color_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/advanced-cases/character/AsianMan/hair textures/man hair card 2-color.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b904f": {
+      "importer": "gltf-material",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@b904f",
+      "displayName": "",
+      "id": "b904f",
+      "name": "lambert14.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e8371": {
+      "importer": "gltf-material",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@e8371",
+      "displayName": "",
+      "id": "e8371",
+      "name": "blinn7.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1ef86": {
+      "importer": "gltf-material",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@1ef86",
+      "displayName": "",
+      "id": "1ef86",
+      "name": "back.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "395ae": {
+      "importer": "gltf-material",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@395ae",
+      "displayName": "",
+      "id": "395ae",
+      "name": "eyeslash.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1ffde": {
+      "importer": "gltf-material",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@1ffde",
+      "displayName": "",
+      "id": "1ffde",
+      "name": "brow.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7c67a": {
+      "importer": "gltf-material",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@7c67a",
+      "displayName": "",
+      "id": "7c67a",
+      "name": "water1.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cbba2": {
+      "importer": "gltf-material",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@cbba2",
+      "displayName": "",
+      "id": "cbba2",
+      "name": "hair.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "860c7": {
+      "importer": "gltf-scene",
+      "uuid": "4220e9ab-1452-493e-9be7-58b91c00079e@860c7",
+      "displayName": "",
+      "id": "860c7",
+      "name": "man_head_with_hair.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "FaceBaseColor_1",
+        "uri": "db://assets/advanced-cases/character/AsianMan/textures/FaceBaseColor.tga"
+      },
+      {
+        "name": "man_Occlusion_1",
+        "uri": "4220e9ab-1452-493e-9be7-58b91c00079e@4e1c4"
+      },
+      {
+        "name": "brow_transparent_1",
+        "uri": "db://assets/advanced-cases/character/AsianMan/textures/brow_transparent.png"
+      },
+      {
+        "name": "man_hair_card_2_color_1",
+        "uri": "db://assets/advanced-cases/character/AsianMan/hair textures/man hair card 2-color.png"
+      },
+      {
+        "name": "man_hair_card_2_Alpha_1",
+        "uri": "db://assets/advanced-cases/character/AsianMan/hair textures/man hair card 2-Alpha.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "4220e9ab-1452-493e-9be7-58b91c00079e@860c7",
+    "assetFinder": {
+      "meshes": [
+        "4220e9ab-1452-493e-9be7-58b91c00079e@6306d"
+      ],
+      "skeletons": [],
+      "textures": [
+        "4220e9ab-1452-493e-9be7-58b91c00079e@0ab21",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@389ee",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@77666",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@e0eb6",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@75667"
+      ],
+      "materials": [
+        "4220e9ab-1452-493e-9be7-58b91c00079e@b904f",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@e8371",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@1ef86",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@395ae",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@1ffde",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@7c67a",
+        "4220e9ab-1452-493e-9be7-58b91c00079e@cbba2"
+      ],
+      "scenes": [
+        "4220e9ab-1452-493e-9be7-58b91c00079e@860c7"
+      ]
+    }
+  }
+}

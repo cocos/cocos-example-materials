@@ -1,0 +1,204 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "4b975e7f-921f-4095-a62d-387544405826",
+  "files": [],
+  "subMetas": {
+    "28762": {
+      "importer": "gltf-material",
+      "uuid": "4b975e7f-921f-4095-a62d-387544405826@28762",
+      "displayName": "",
+      "id": "28762",
+      "name": "iris2.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e00ff": {
+      "importer": "gltf-mesh",
+      "uuid": "4b975e7f-921f-4095-a62d-387544405826@e00ff",
+      "displayName": "",
+      "id": "e00ff",
+      "name": "brow2:head_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7127f": {
+      "importer": "texture",
+      "uuid": "4b975e7f-921f-4095-a62d-387544405826@7127f",
+      "displayName": "",
+      "id": "7127f",
+      "name": "face:Face1F.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/advanced-cases/character/Kimono-Girl/Marmoset&Texture/face_Basecolor.tga"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6feb8": {
+      "importer": "texture",
+      "uuid": "4b975e7f-921f-4095-a62d-387544405826@6feb8",
+      "displayName": "",
+      "id": "6feb8",
+      "name": "face_Basecolor_2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/advanced-cases/character/Kimono-Girl/Marmoset&Texture/face_Basecolor.tga"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "87e91": {
+      "importer": "gltf-material",
+      "uuid": "4b975e7f-921f-4095-a62d-387544405826@87e91",
+      "displayName": "",
+      "id": "87e91",
+      "name": "brow5.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e32c2": {
+      "importer": "gltf-material",
+      "uuid": "4b975e7f-921f-4095-a62d-387544405826@e32c2",
+      "displayName": "",
+      "id": "e32c2",
+      "name": "eyelash2.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0b743": {
+      "importer": "gltf-material",
+      "uuid": "4b975e7f-921f-4095-a62d-387544405826@0b743",
+      "displayName": "",
+      "id": "0b743",
+      "name": "eyelid1.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "203cf": {
+      "importer": "gltf-material",
+      "uuid": "4b975e7f-921f-4095-a62d-387544405826@203cf",
+      "displayName": "",
+      "id": "203cf",
+      "name": "Face1.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a6971": {
+      "importer": "gltf-scene",
+      "uuid": "4b975e7f-921f-4095-a62d-387544405826@a6971",
+      "displayName": "",
+      "id": "a6971",
+      "name": "KimonoGirl_Head.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "face:Face1F",
+        "uri": "db://assets/advanced-cases/character/Kimono-Girl/Marmoset&Texture/face_Basecolor.tga"
+      },
+      {
+        "name": "face_Basecolor_2",
+        "uri": "db://assets/advanced-cases/character/Kimono-Girl/Marmoset&Texture/face_Basecolor.tga"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "4b975e7f-921f-4095-a62d-387544405826@a6971",
+    "assetFinder": {
+      "meshes": [
+        "4b975e7f-921f-4095-a62d-387544405826@e00ff"
+      ],
+      "skeletons": [],
+      "textures": [
+        "4b975e7f-921f-4095-a62d-387544405826@7127f",
+        "4b975e7f-921f-4095-a62d-387544405826@6feb8"
+      ],
+      "materials": [
+        "4b975e7f-921f-4095-a62d-387544405826@87e91",
+        "4b975e7f-921f-4095-a62d-387544405826@e32c2",
+        "4b975e7f-921f-4095-a62d-387544405826@28762",
+        "4b975e7f-921f-4095-a62d-387544405826@0b743",
+        "4b975e7f-921f-4095-a62d-387544405826@203cf"
+      ],
+      "scenes": [
+        "4b975e7f-921f-4095-a62d-387544405826@a6971"
+      ]
+    }
+  }
+}

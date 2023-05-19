@@ -1,0 +1,81 @@
+{
+  "ver": "2.4.0",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "820d59de-a68e-478b-8c6c-c37090b68262",
+  "files": [],
+  "subMetas": {
+    "ec78a": {
+      "importer": "gltf-mesh",
+      "uuid": "820d59de-a68e-478b-8c6c-c37090b68262@ec78a",
+      "displayName": "",
+      "id": "ec78a",
+      "name": "Backdrop.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8d883": {
+      "importer": "gltf-material",
+      "uuid": "820d59de-a68e-478b-8c6c-c37090b68262@8d883",
+      "displayName": "",
+      "id": "8d883",
+      "name": "lambert1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cb712": {
+      "importer": "gltf-scene",
+      "uuid": "820d59de-a68e-478b-8c6c-c37090b68262@cb712",
+      "displayName": "",
+      "id": "cb712",
+      "name": "back.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "allowMeshDataAccess": true,
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "820d59de-a68e-478b-8c6c-c37090b68262@cb712",
+    "assetFinder": {
+      "meshes": [
+        "820d59de-a68e-478b-8c6c-c37090b68262@ec78a"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "820d59de-a68e-478b-8c6c-c37090b68262@8d883"
+      ],
+      "scenes": [
+        "820d59de-a68e-478b-8c6c-c37090b68262@cb712"
+      ]
+    },
+    "ignoreOriginalImageLocation": false
+  }
+}

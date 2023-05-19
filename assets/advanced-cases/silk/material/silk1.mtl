@@ -1,0 +1,87 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {
+      "IS_ANISOTROPY": true,
+      "USE_ALBEDO_MAP": true,
+      "USE_NORMAL_MAP": true,
+      "USE_PBR_MAP": true
+    },
+    {},
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "tilingOffset": {
+        "__type__": "cc.Vec4",
+        "x": 5,
+        "y": 5,
+        "z": 0,
+        "w": 0
+      },
+      "mainColor": {
+        "__type__": "cc.Color",
+        "r": 236,
+        "g": 236,
+        "b": 236,
+        "a": 255
+      },
+      "roughness": 0.729,
+      "metallic": 1,
+      "specularIntensity": 1,
+      "normalStrength": 3.187,
+      "anisotropyRotation": 0.9796,
+      "mainTexture": {
+        "__uuid__": "73f0e563-1059-4459-b260-37b9dc95d34b@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "f4378036-58dc-45a3-a5e5-12448ba0b062@3c318",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "pbrMap": {
+        "__uuid__": "315da32c-70f3-4abc-bfbe-046b5791d324@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      }
+    },
+    {},
+    {}
+  ]
+}

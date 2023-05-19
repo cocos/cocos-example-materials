@@ -1,0 +1,111 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "f0475923-826e-45dc-85cc-b5d9c2b220e9",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {
+      "USE_NORMAL_MAP": true,
+      "USE_IRIS_REFRACTION": true,
+      "USE_IRIS_CAUSTICS": true,
+      "USE_IRIS_CAUSTICS_RANGE": true
+    },
+    {},
+    {},
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "roughness": 0.06,
+      "mainTexture": {
+        "__uuid__": "c2606248-65e1-4ca5-9f51-5edfca982081@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "dc2c4ec6-86c5-44c2-9812-4c8101fea092@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "occlusionMap": {
+        "__uuid__": "76481a61-f886-4621-a27b-fa197684ccfd@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "irisGradientMap": {
+        "__uuid__": "6ba85702-92d1-4bf9-bc51-20e91723869c@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "irisColorMaskMap": {
+        "__uuid__": "d33f516a-5844-46f8-b6a6-df78c5978de5@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "veinsColorMap": {
+        "__uuid__": "6ee20da0-3ca9-4d9c-9ee7-f4e711ae5155@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "irisNormalMap": {
+        "__uuid__": "ccf992e0-1a0b-44ce-b0f4-d564f2dff6c3@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "irisHeightMap": {
+        "__uuid__": "ac3ea641-a51b-4779-92c7-28869303d7be@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "irisHeightMapAlpha": {
+        "__uuid__": "ac3ea641-a51b-4779-92c7-28869303d7be@2a309@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "irisHeightScale": 0.4,
+      "irisScale": 0.455,
+      "pupilScale": 1.04,
+      "veinsBleeding": 2,
+      "scleraBright": 0.831,
+      "causticsPosition": 0.28,
+      "causticsWidth": 0.274
+    },
+    {},
+    {},
+    {}
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "ver": "1.0.24",
+  "importer": "image",
+  "imported": true,
+  "uuid": "f4378036-58dc-45a3-a5e5-12448ba0b062",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "3c318": {
+      "importer": "texture",
+      "uuid": "f4378036-58dc-45a3-a5e5-12448ba0b062@3c318",
+      "displayName": "silk_normal",
+      "id": "3c318",
+      "name": "normalMap",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f4378036-58dc-45a3-a5e5-12448ba0b062"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "normal map",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "f4378036-58dc-45a3-a5e5-12448ba0b062@3c318"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76",
+  "files": [],
+  "subMetas": {
+    "5a702": {
+      "importer": "gltf-mesh",
+      "uuid": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@5a702",
+      "displayName": "",
+      "id": "5a702",
+      "name": "hair1:Hair.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "74e00": {
+      "importer": "gltf-embeded-image",
+      "uuid": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@74e00",
+      "displayName": "",
+      "id": "74e00",
+      "name": "hair1:___Default1F.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "6d649": {
+      "importer": "gltf-embeded-image",
+      "uuid": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@6d649",
+      "displayName": "",
+      "id": "6d649",
+      "name": "hair1:___Default1F1.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "c9193": {
+      "importer": "texture",
+      "uuid": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@c9193",
+      "displayName": "",
+      "id": "c9193",
+      "name": "hair1:___Default1F.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@74e00"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "374d8": {
+      "importer": "texture",
+      "uuid": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@374d8",
+      "displayName": "",
+      "id": "374d8",
+      "name": "hair1:___Default1F1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@6d649"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0cb4d": {
+      "importer": "gltf-material",
+      "uuid": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@0cb4d",
+      "displayName": "",
+      "id": "0cb4d",
+      "name": "hair1:___Default1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0af34": {
+      "importer": "gltf-scene",
+      "uuid": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@0af34",
+      "displayName": "",
+      "id": "0af34",
+      "name": "KimonoGirl_Hair.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "hair1:___Default1F",
+        "uri": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@74e00"
+      },
+      {
+        "name": "hair1:___Default1F1",
+        "uri": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@6d649"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@0af34",
+    "assetFinder": {
+      "meshes": [
+        "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@5a702"
+      ],
+      "skeletons": [],
+      "textures": [
+        "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@c9193",
+        "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@374d8"
+      ],
+      "materials": [
+        "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@0cb4d"
+      ],
+      "scenes": [
+        "466e9139-9ee4-4dbf-bf7d-bbf3ca373e76@0af34"
+      ]
+    }
+  }
+}

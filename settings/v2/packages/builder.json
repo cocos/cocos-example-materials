@@ -1,0 +1,497 @@
+{
+  "projectSetting": {},
+  "textureCompressConfig": {
+    "userPreset": {
+      "33c0074836a7e03830341d5a99f09f00": {
+        "name": "etc1rgb",
+        "options": {
+          "android": {
+            "etc1_rgb": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "ios": {
+            "etc1_rgb": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "etc1_rgb": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "etc1_rgb": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "2098655fcfa99b57d3f696a4033b3820": {
+        "name": "etc1rgb_a",
+        "options": {
+          "android": {
+            "etc1_rgb_a": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "ios": {
+            "etc1_rgb_a": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "etc1_rgb_a": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "etc1_rgb_a": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "a7dbf347e43450d4471f61e6e1644691": {
+        "name": "etc2_rgb",
+        "options": {
+          "android": {
+            "etc2_rgb": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "ios": {
+            "etc2_rgb": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "etc2_rgb": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "etc2_rgb": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "dccb557a034387b75e6baa80196832f0": {
+        "name": "etc2rgba",
+        "options": {
+          "android": {
+            "etc2_rgba": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "ios": {
+            "etc2_rgba": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "etc2_rgba": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "etc2_rgba": {
+              "quality": "fast"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "13557f486bcc25b285cba9223b3377a8": {
+        "name": "pvr2rgb",
+        "options": {
+          "android": {},
+          "ios": {
+            "pvrtc_2bits_rgb": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "pvrtc_2bits_rgb": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "pvrtc_2bits_rgb": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "0c4695421f1d2822ee478d63a908ebaf": {
+        "name": "pvr2rgb_a",
+        "options": {
+          "android": {},
+          "ios": {
+            "pvrtc_2bits_rgb_a": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "pvrtc_2bits_rgb_a": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "pvrtc_2bits_rgb_a": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "88dc9f1afbbea6dc33264299b06defc4": {
+        "name": "pvr2rgba",
+        "options": {
+          "android": {},
+          "ios": {
+            "pvrtc_2bits_rgba": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "pvrtc_2bits_rgba": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "pvrtc_2bits_rgba": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "3c1e2cfc710b99a2f1b24cd75d60f4da": {
+        "name": "pvr4rgb",
+        "options": {
+          "ios": {
+            "pvrtc_4bits_rgb": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "pvrtc_4bits_rgb": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "pvrtc_4bits_rgb": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "38862ba5a526479b6a8e705cff204240": {
+        "name": "pvr4rgba",
+        "options": {
+          "android": {},
+          "ios": {
+            "pvrtc_4bits_rgba": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "pvrtc_4bits_rgba": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "pvrtc_4bits_rgba": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "b5b67369a666804c56cd0fbdcf37450d": {
+        "name": "pvr4rgb_a",
+        "options": {
+          "android": {},
+          "ios": {
+            "pvrtc_4bits_rgb_a": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "pvrtc_4bits_rgb_a": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "pvrtc_4bits_rgb_a": {
+              "quality": "normal"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "6a294358579240936bf4d66151e6e720": {
+        "name": "webp",
+        "options": {
+          "android": {
+            "webp": {
+              "quality": 80
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "ios": {
+            "webp": {
+              "quality": 80
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "webp": {
+              "quality": 80
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "webp": {
+              "quality": 80
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "c36bbd258b7ee694eb987221b2b197b0": {
+        "name": "jpg",
+        "options": {
+          "android": {
+            "jpg": {
+              "quality": 80
+            }
+          },
+          "ios": {
+            "jpg": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "jpg": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "jpg": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "edctr14XNOBKwkx22W6cdp": {
+        "name": "astc4x4",
+        "options": {
+          "android": {
+            "astc_4x4": {
+              "quality": "medium"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "ios": {
+            "astc_4x4": {
+              "quality": "medium"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "astc_4x4": {
+              "quality": "medium"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "astc_4x4": {
+              "quality": "medium"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "82pTTpO+lA74wnjpL1v4Bx": {
+        "name": "astc10x10",
+        "options": {
+          "android": {
+            "astc_10x10": {
+              "quality": "medium"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "ios": {
+            "astc_10x10": {
+              "quality": "medium"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "astc_10x10": {
+              "quality": "medium"
+            },
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "astc_10x10": {
+              "quality": "medium"
+            },
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      },
+      "afI5JG+ONDCbgGbraJsAx6": {
+        "name": "png",
+        "options": {
+          "android": {
+            "png": {
+              "quality": 80
+            }
+          },
+          "ios": {
+            "png": {
+              "quality": 80
+            }
+          },
+          "miniGame": {
+            "png": {
+              "quality": 80
+            }
+          },
+          "web": {
+            "png": {
+              "quality": 80
+            }
+          }
+        }
+      }
+    }
+  },
+  "hasSetSplash": true,
+  "__version__": "1.3.3"
+}

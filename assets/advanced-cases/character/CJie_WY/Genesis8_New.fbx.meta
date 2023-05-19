@@ -1,0 +1,528 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb",
+  "files": [],
+  "subMetas": {
+    "31557": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@31557",
+      "displayName": "",
+      "id": "31557",
+      "name": "Material #57.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cc243": {
+      "importer": "gltf-mesh",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@cc243",
+      "displayName": "",
+      "id": "cc243",
+      "name": "Genesis8_Body_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4939": {
+      "importer": "gltf-mesh",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@d4939",
+      "displayName": "",
+      "id": "d4939",
+      "name": "Genesis8_Eye_Material0.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "24a79": {
+      "importer": "gltf-embeded-image",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@24a79",
+      "displayName": "",
+      "id": "24a79",
+      "name": "RNMinto81 Torso Base Color 01.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "22e54": {
+      "importer": "gltf-embeded-image",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@22e54",
+      "displayName": "",
+      "id": "22e54",
+      "name": "RNMinto81 Face Base Color 01.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "38a83": {
+      "importer": "gltf-embeded-image",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@38a83",
+      "displayName": "",
+      "id": "38a83",
+      "name": "RNMinto81 Mouth Base Color 01.image",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "70fb5": {
+      "importer": "gltf-embeded-image",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@70fb5",
+      "displayName": "",
+      "id": "70fb5",
+      "name": "RNMinto81 Legs Base Color 01.image",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "9b226": {
+      "importer": "gltf-embeded-image",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@9b226",
+      "displayName": "",
+      "id": "9b226",
+      "name": "RNMinto81 Arms Base Color 01.image",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "c99fc": {
+      "importer": "texture",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@c99fc",
+      "displayName": "",
+      "id": "c99fc",
+      "name": "RNMinto81 Torso Base Color 01.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@24a79"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "06f1c": {
+      "importer": "texture",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@06f1c",
+      "displayName": "",
+      "id": "06f1c",
+      "name": "RNMinto81 Face Base Color 01.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@22e54"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "47a8f": {
+      "importer": "texture",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@47a8f",
+      "displayName": "",
+      "id": "47a8f",
+      "name": "RNMinto81 Mouth Base Color 01.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@38a83"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "165fe": {
+      "importer": "texture",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@165fe",
+      "displayName": "",
+      "id": "165fe",
+      "name": "RNMinto81 Legs Base Color 01.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@70fb5"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4e0b0": {
+      "importer": "texture",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@4e0b0",
+      "displayName": "",
+      "id": "4e0b0",
+      "name": "RNMinto81 Arms Base Color 01.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@9b226"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8bfc7": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@8bfc7",
+      "displayName": "",
+      "id": "8bfc7",
+      "name": "Material #42.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6f2c9": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@6f2c9",
+      "displayName": "",
+      "id": "6f2c9",
+      "name": "Material #44.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a0a0e": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@a0a0e",
+      "displayName": "",
+      "id": "a0a0e",
+      "name": "Material #45.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d39c8": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@d39c8",
+      "displayName": "",
+      "id": "d39c8",
+      "name": "Material #47.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "49b23": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@49b23",
+      "displayName": "",
+      "id": "49b23",
+      "name": "Material #49.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c494b": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@c494b",
+      "displayName": "",
+      "id": "c494b",
+      "name": "Material #50.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "19d1a": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@19d1a",
+      "displayName": "",
+      "id": "19d1a",
+      "name": "Material #53.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7883e": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@7883e",
+      "displayName": "",
+      "id": "7883e",
+      "name": "Material #58.material",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cf1c0": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@cf1c0",
+      "displayName": "",
+      "id": "cf1c0",
+      "name": "MI_EyeOcclusion_Mia.material",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ead2b": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@ead2b",
+      "displayName": "",
+      "id": "ead2b",
+      "name": "MI_Eye_03_L_Mia.material",
+      "userData": {
+        "gltfIndex": 10
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4cc4": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@d4cc4",
+      "displayName": "",
+      "id": "d4cc4",
+      "name": "MI_LacrimalFluid_Mia.material",
+      "userData": {
+        "gltfIndex": 11
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8b352": {
+      "importer": "gltf-material",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@8b352",
+      "displayName": "",
+      "id": "8b352",
+      "name": "MI_Teeth_Mia.material",
+      "userData": {
+        "gltfIndex": 12
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3cdb6": {
+      "importer": "gltf-scene",
+      "uuid": "73a990de-a32e-4744-a422-0b11ccc2ebfb@3cdb6",
+      "displayName": "",
+      "id": "3cdb6",
+      "name": "Genesis8_New.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "RNMinto81 Torso Base Color 01",
+        "uri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@24a79"
+      },
+      {
+        "name": "RNMinto81 Face Base Color 01",
+        "uri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@22e54"
+      },
+      {
+        "name": "RNMinto81 Mouth Base Color 01",
+        "uri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@38a83"
+      },
+      {
+        "name": "RNMinto81 Legs Base Color 01",
+        "uri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@70fb5"
+      },
+      {
+        "name": "RNMinto81 Arms Base Color 01",
+        "uri": "73a990de-a32e-4744-a422-0b11ccc2ebfb@9b226"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "73a990de-a32e-4744-a422-0b11ccc2ebfb@3cdb6",
+    "assetFinder": {
+      "meshes": [
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@cc243",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@d4939"
+      ],
+      "skeletons": [],
+      "textures": [
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@c99fc",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@06f1c",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@47a8f",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@165fe",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@4e0b0"
+      ],
+      "materials": [
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@8bfc7",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@6f2c9",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@a0a0e",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@d39c8",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@49b23",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@c494b",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@19d1a",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@31557",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@7883e",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@cf1c0",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@ead2b",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@d4cc4",
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@8b352"
+      ],
+      "scenes": [
+        "73a990de-a32e-4744-a422-0b11ccc2ebfb@3cdb6"
+      ]
+    },
+    "normals": 2
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "35f5ca1a-403a-4c0f-84fb-9833326fd1b7",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {
+      "IS_ANISOTROPY": true,
+      "USE_ALBEDO_MAP": true,
+      "USE_NORMAL_MAP": true,
+      "USE_PBR_MAP": true,
+      "USE_ANISOTROPY_FLOW_MAP": true
+    },
+    {},
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "tilingOffset": {
+        "__type__": "cc.Vec4",
+        "x": 10,
+        "y": 10,
+        "z": 0,
+        "w": 0
+      },
+      "roughness": 0.544,
+      "metallic": 0.819,
+      "specularIntensity": 0.025,
+      "normalStrength": 2.187,
+      "anisotropyRotation": 0.342,
+      "mainTexture": {
+        "__uuid__": "905f32e9-ce66-4fa5-b382-e89eb06794e2@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "57c4d97f-f16b-462d-92ce-95032ca1629c@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "pbrMap": {
+        "__uuid__": "5258d244-5e13-459a-b4ae-2461d63ed449@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "anisotropyFlowMap": {
+        "__uuid__": "bf0c091b-79da-4222-b8a5-564a46d7bbec@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      }
+    },
+    {},
+    {}
+  ]
+}
