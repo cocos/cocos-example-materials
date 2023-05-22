@@ -1,4 +1,4 @@
-import { Color, Canvas, UITransform, instantiate, math, Toggle, TextureCube, _decorator, Component, Button, labelAssembler, game, director, Node, Scene, renderer, CameraComponent, Label, ForwardPipeline, RichText } from 'cc';
+import { Color, Canvas, UITransform, instantiate, math, Toggle, TextureCube, _decorator, Component, Button, labelAssembler, game, director, Node, Scene, renderer, CameraComponent, Label, ForwardPipeline, RichText, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('internal.DisplayControl')
@@ -12,6 +12,7 @@ export class DisplayControl extends Component {
 
 	private _single: number = 0;
     private _activeNode: Node | null = null;
+    private _position = new Vec3(0.0, 0.0, 0.0);
 
     start() {
         const skinNodes = this.node.children;
@@ -37,6 +38,10 @@ export class DisplayControl extends Component {
         const skinNode = skinNodes[idx];
         skinNode.active = true;
         this._activeNode = skinNode;
+        skinNode.getPosition(this._position);
+        this._position.x = this._position.z = 0.0;
+        skinNode.setPosition(this._position);
+        skinNode.updateWorldTransform();
 
         const richTextComponent = this.DisplayNode.getComponent(RichText);
         richTextComponent.string = this._activeNode.name;
