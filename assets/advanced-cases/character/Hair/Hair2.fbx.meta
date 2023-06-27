@@ -1,0 +1,172 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720",
+  "files": [],
+  "subMetas": {
+    "14210": {
+      "importer": "texture",
+      "uuid": "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@14210",
+      "displayName": "",
+      "id": "14210",
+      "name": "hair_001_scalp_alp_3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/advanced-cases/character/Hair/hair_001_scalp_alp.tga"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b4b92": {
+      "importer": "gltf-mesh",
+      "uuid": "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@b4b92",
+      "displayName": "",
+      "id": "b4b92",
+      "name": "polySurface112.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 142621
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3e7d4": {
+      "importer": "texture",
+      "uuid": "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@3e7d4",
+      "displayName": "",
+      "id": "3e7d4",
+      "name": "hair_001_alp_3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/advanced-cases/character/Hair/hair_001_alp.tga"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "62b33": {
+      "importer": "gltf-material",
+      "uuid": "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@62b33",
+      "displayName": "",
+      "id": "62b33",
+      "name": "lambert6.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cd3cd": {
+      "importer": "gltf-material",
+      "uuid": "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@cd3cd",
+      "displayName": "",
+      "id": "cd3cd",
+      "name": "lambert7.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5f0f0": {
+      "importer": "gltf-scene",
+      "uuid": "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@5f0f0",
+      "displayName": "",
+      "id": "5f0f0",
+      "name": "Hair2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.13",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "hair_001_alp_3",
+        "uri": "db://assets/advanced-cases/character/Hair/hair_001_alp.tga"
+      },
+      {
+        "name": "hair_001_scalp_alp_3",
+        "uri": "db://assets/advanced-cases/character/Hair/hair_001_scalp_alp.tga"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@5f0f0",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@b4b92"
+      ],
+      "skeletons": [],
+      "textures": [
+        "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@3e7d4",
+        "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@14210"
+      ],
+      "materials": [
+        "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@62b33",
+        "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@cd3cd"
+      ],
+      "scenes": [
+        "dff94f3a-9e8a-4aa7-bfb8-5027a7ba5720@5f0f0"
+      ]
+    }
+  }
+}

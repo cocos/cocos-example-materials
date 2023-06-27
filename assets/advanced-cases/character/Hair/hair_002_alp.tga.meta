@@ -1,0 +1,42 @@
+{
+  "ver": "1.0.26",
+  "importer": "image",
+  "imported": true,
+  "uuid": "c2f2cd8c-aa1e-4fbe-9624-08413e9d3e02",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "c2f2cd8c-aa1e-4fbe-9624-08413e9d3e02@6c48a",
+      "displayName": "hair_002_alp",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "linear",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c2f2cd8c-aa1e-4fbe-9624-08413e9d3e02",
+        "visible": false
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "fixAlphaTransparencyArtifacts": false,
+    "hasAlpha": true,
+    "type": "texture",
+    "redirect": "c2f2cd8c-aa1e-4fbe-9624-08413e9d3e02@6c48a"
+  }
+}
