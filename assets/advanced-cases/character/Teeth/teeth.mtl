@@ -1,0 +1,110 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {
+      "USE_NORMAL_MAP": true,
+      "USE_ALBEDO_MAP": true,
+      "USE_PBR_MAP": true
+    },
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "mainColor": {
+        "__type__": "cc.Color",
+        "r": 230,
+        "g": 219,
+        "b": 213,
+        "a": 255
+      },
+      "occlusion": 0.5,
+      "roughness": 0.233,
+      "mainTexture": {
+        "__uuid__": "cebd2932-7dde-4d6c-80e6-0cbb32dae718@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "normalMap": {
+        "__uuid__": "79e4fa67-9899-4c90-90a9-0c7eec4031ce@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "pbrMap": {
+        "__uuid__": "0efef615-9385-4f45-8f56-6017d42b4a87@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {}
+  ]
+}
