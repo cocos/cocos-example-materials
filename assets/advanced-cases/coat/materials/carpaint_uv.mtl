@@ -1,0 +1,117 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "304a12db-3955-46e4-b712-e5e26f45258b",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {
+      "USE_FLAKE": true,
+      "USE_GRADIENT_COLOR": true
+    },
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "mainColor": {
+        "__type__": "cc.Color",
+        "r": 85,
+        "g": 98,
+        "b": 255,
+        "a": 255
+      },
+      "roughness": 0.599,
+      "metallic": 1,
+      "coatRoughness": 0.02,
+      "coatIOR": 1.2241,
+      "flakeDensity": 0.27,
+      "flakeColorIntensity": 0.248,
+      "flakeTiling": 6,
+      "gradientColor": {
+        "__type__": "cc.Color",
+        "r": 114,
+        "g": 0,
+        "b": 204,
+        "a": 255
+      },
+      "coatNormalMap": {
+        "__uuid__": "e8f2422c-fe71-4055-9f07-fbb2a067852f@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "flakeDataMap": {
+        "__uuid__": "58354245-81f1-482b-af7d-2ca6eb986772@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {}
+  ]
+}

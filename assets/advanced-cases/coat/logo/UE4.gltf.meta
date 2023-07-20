@@ -1,0 +1,94 @@
+{
+  "ver": "2.3.8",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "a7e50dd3-f586-40c1-ab9a-21071c4b5756",
+  "files": [],
+  "subMetas": {
+    "ae7f7": {
+      "importer": "gltf-mesh",
+      "uuid": "a7e50dd3-f586-40c1-ab9a-21071c4b5756@ae7f7",
+      "displayName": "",
+      "id": "ae7f7",
+      "name": "UE4.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 51996
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ea6e2": {
+      "importer": "gltf-material",
+      "uuid": "a7e50dd3-f586-40c1-ab9a-21071c4b5756@ea6e2",
+      "displayName": "",
+      "id": "ea6e2",
+      "name": "DefaultMaterial.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "09c57": {
+      "importer": "gltf-scene",
+      "uuid": "a7e50dd3-f586-40c1-ab9a-21071c4b5756@09c57",
+      "displayName": "",
+      "id": "09c57",
+      "name": "UE4.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "redirect": "a7e50dd3-f586-40c1-ab9a-21071c4b5756@09c57",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "a7e50dd3-f586-40c1-ab9a-21071c4b5756@ae7f7"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "a7e50dd3-f586-40c1-ab9a-21071c4b5756@ea6e2"
+      ],
+      "scenes": [
+        "a7e50dd3-f586-40c1-ab9a-21071c4b5756@09c57"
+      ]
+    }
+  }
+}

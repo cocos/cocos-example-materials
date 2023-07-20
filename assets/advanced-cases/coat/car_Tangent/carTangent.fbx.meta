@@ -1,0 +1,267 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed",
+  "files": [],
+  "subMetas": {
+    "29806": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@29806",
+      "displayName": "",
+      "id": "29806",
+      "name": "brake_mat.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5b699": {
+      "importer": "gltf-mesh",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@5b699",
+      "displayName": "",
+      "id": "5b699",
+      "name": "Output.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 150776
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "72f1c": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@72f1c",
+      "displayName": "",
+      "id": "72f1c",
+      "name": "Leather_mat.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9a8b0": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@9a8b0",
+      "displayName": "",
+      "id": "9a8b0",
+      "name": "Carpaint_mat.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fe799": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@fe799",
+      "displayName": "",
+      "id": "fe799",
+      "name": "ReflectorGlass_mat.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c8497": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@c8497",
+      "displayName": "",
+      "id": "c8497",
+      "name": "TireMetal_mat.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a62e9": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@a62e9",
+      "displayName": "",
+      "id": "a62e9",
+      "name": "TireRubber_mat.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "00648": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@00648",
+      "displayName": "",
+      "id": "00648",
+      "name": "WindowShild_mat.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "03fe7": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@03fe7",
+      "displayName": "",
+      "id": "03fe7",
+      "name": "ReflectorPaint_mat.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5455b": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@5455b",
+      "displayName": "",
+      "id": "5455b",
+      "name": "FrontLightsGlass_mat.material",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8286a": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@8286a",
+      "displayName": "",
+      "id": "8286a",
+      "name": "FrontLightsEmissive_mat.material",
+      "userData": {
+        "gltfIndex": 9
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b2597": {
+      "importer": "gltf-material",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@b2597",
+      "displayName": "",
+      "id": "b2597",
+      "name": "other_mat.material",
+      "userData": {
+        "gltfIndex": 10
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "979e3": {
+      "importer": "gltf-scene",
+      "uuid": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@979e3",
+      "displayName": "",
+      "id": "979e3",
+      "name": "carTangent.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@979e3",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@5b699"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@72f1c",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@29806",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@9a8b0",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@fe799",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@c8497",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@a62e9",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@00648",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@03fe7",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@5455b",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@8286a",
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@b2597"
+      ],
+      "scenes": [
+        "d03d5a8f-f5a1-4b5b-92e0-4c8d695040ed@979e3"
+      ]
+    }
+  }
+}
