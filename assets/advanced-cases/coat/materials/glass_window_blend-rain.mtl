@@ -1,0 +1,110 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "f9ba4204-cfb6-4214-9c0d-650323950ad2",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 1,
+  "_defines": [
+    {
+      "USE_DROPLETS": true,
+      "USE_RIVULET": true
+    },
+    {},
+    {},
+    {},
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "mainColor": {
+        "__type__": "cc.Color",
+        "r": 25,
+        "g": 25,
+        "b": 25,
+        "a": 255
+      },
+      "specularIntensity": 0.113,
+      "F0": 0.718,
+      "F90": 1,
+      "gradientColor": {
+        "__type__": "cc.Color",
+        "r": 0,
+        "g": 92,
+        "b": 0,
+        "a": 255
+      },
+      "gradientIntensity": 0.145,
+      "_DropletMask": {
+        "__uuid__": "3cea7682-b829-4751-9bc5-6644857d0a6b@3c318",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "_RivuletRotation": 64,
+      "_TilingRivulet": {
+        "__type__": "cc.Vec2",
+        "x": 0.5,
+        "y": 0.5
+      },
+      "_RivuletMask": {
+        "__uuid__": "5b190541-f477-4ae5-aede-fabbb9da060d@3c318",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "_RivuletsStrength": 50
+    },
+    {},
+    {},
+    {},
+    {}
+  ]
+}

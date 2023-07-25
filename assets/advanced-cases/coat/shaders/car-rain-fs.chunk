@@ -1,0 +1,118 @@
+/*参数：
+        _DropletsGravity:  { value: 0.0, editor: { displayName: 水滴重力,parent: USE_DROPLETS, slide: true, range: [-10.0, 10.0], step: 0.1 } }
+        _TilingDroplet:    { value: [1.0, 1.0], editor: { displayName: 水滴缩放, parent: USE_DROPLETS} }
+        _DropletsStrikeSpeed: { value: 1.0, editor: { displayName: 水滴消失速度, parent: USE_DROPLETS} }
+        _Droplets_Strength: { value: 1.0, editor: { displayName: 水滴表现强度, parent: USE_DROPLETS}  }
+        _Distortion: { value: 93, editor: { displayName: 水滴扭曲, parent: USE_DROPLETS} }
+        _DropletMask: { value: white, editor: { displayName: 水滴纹理, parent: USE_DROPLETS} }
+        _RivuletRotation: { value: 40, editor: { displayName: 水流方向, parent: USE_RIVULET, slide: true, range: [0, 360.0], step: 1.0 }}
+        _TilingRivulet: { value: [1.0, 1.0], editor: { displayName: 水流缩放, parent: USE_RIVULET} }
+        _RivuletMask: { value: white, editor: { displayName: 水流纹理, parent: USE_RIVULET} }
+        _RivuletSpeed: { value: 1.0, editor: { displayName: 水流速度, parent: USE_RIVULET,slide: true, range: [0, 1.0], step: 0.001 } }
+        _RivuletsStrength: { value: 1.0, editor: { displayName: 水流表现强度, parent: USE_RIVULET,slide: true, range: [0, 1000.0], step: 0.001 } }
+*/
+  in mat4 v_matWorldInverse;
+  in vec3 v_localNormal;
+  #if USE_DROPLETS
+    uniform sampler2D _DropletMask;
+  #endif
+  #if USE_RIVULET
+    uniform sampler2D _RivuletMask;
+  #endif
+  
+  void Unity_RotateAboutAxis_Degrees_float(vec3 point, vec3 axis, float angleDegrees, inout vec3 result) {
+    float angleRad = radians(angleDegrees);
+    float cosAngle = cos(angleRad);
+    float sinAngle = sin(angleRad);
+    vec3 crossProd = cross(axis, point);
+    float dotProd = dot(axis, point);
+    vec3 axisScaled = axis * dotProd * (1.0 - cosAngle);
+    result = point * cosAngle + crossProd * sinAngle + axisScaled;
+  }
+  vec3 UnpackNormalWithScale(vec4 packednormal, float scale)
+  {
+      vec3 outNormal = vec3(0.0);
+      outNormal.xy = (packednormal.xy * 2.0 - 1.0) * scale;
+      outNormal.z = sqrt(1.0 - saturate(dot(outNormal.xy, outNormal.xy)));
+      return outNormal;
+  }
+  #include <common/math/transform>
+  #if USE_DROPLETS
+    vec3 GetDropletNormal(vec3 normalWS)
+    {
+      vec4 ase_grabScreenPosNorm = vec4(0.0, 0.0, 0.0, 1.0);
+      vec2 appendResult145 = vec2(0.0, _DropletsGravity);
+      vec2 uv_TexCoord3 = FSInput_texcoord * _TilingDroplet.xy;
+      vec2 panner143 = (1.0 * cc_time.x * 0.1 * appendResult145 + uv_TexCoord3);
+      vec4 tex2DNode2 = texture(_DropletMask, panner143);
+      tex2DNode2.rgb = LinearToSRGB(tex2DNode2.rgb);
+      vec3 ase_worldNormal = normalWS;
+      float dotResult191 = dot(ase_worldNormal, vec3(0.0, 1.0, 0.0));
+      vec4 temp_cast_1 = vec4(1.0);
+      vec4 break171 = ((tex2DNode2 * 2.0) - temp_cast_1);
+      vec4 appendResult172 = vec4(break171.r, break171.g, 0.0, 0.0);
+      float mulTime4 = cc_time.x * 0.1 * _DropletsStrikeSpeed;
+      vec4 break201 = (appendResult172 * saturate(ceil((0.0 + ((tex2DNode2.a - fract(((-1.0 + (tex2DNode2.b - 0.0) * (1.0 - -1.0) / (1.0 - 0.0)) + mulTime4))) - (1.0 - _Droplets_Strength)) * (1.0 - 0.0) / (1.0 - (1.0 - _Droplets_Strength))))));
+      vec4 appendResult200 = vec4(break201.xyz, break201.w);
+      // no droplet on sides
+      appendResult200 = mix(vec4(0.0), appendResult200, saturate(normalWS.y));
+      vec4 temp_output_41_0_Drop = (ase_grabScreenPosNorm + ((appendResult200) * _Distortion));
+      temp_output_41_0_Drop.z = 0.0;
+      return normalWS - temp_output_41_0_Drop.xyz;
+    }
+  #endif
+
+  #if USE_RIVULET
+    vec3 GetRivuletNormal(vec3 normalWS)
+    {
+      vec3 scale, pos;
+      mat3 rot;
+      departWorldMatrix(pos, scale, rot, v_matWorldInverse);
+      vec3 map = rot * FSInput_worldPos + pos;
+      vec3 norm = rot * normalWS;
+      const float Deg2Rad = 0.0174532925;
+
+      vec3 blend = abs(norm) / dot(abs(norm), vec3(1.0));
+      vec2 triplanarUV;
+
+      if (blend.x > max(blend.y, blend.z)) {
+          triplanarUV = map.zy;
+      } else {
+          triplanarUV = map.zy;
+      }
+      vec2 rotator76 = triplanarUV;
+      ////////////////////////////////////
+      float cos85 = cos(_RivuletRotation * Deg2Rad);
+      float sin85 = sin(_RivuletRotation * Deg2Rad);
+      vec2 rotator85 = rotator76 * mat2(cos85, -sin85, sin85, cos85);
+      float frontOrBack = abs(_RivuletLockDirection == 0.0 ? v_localNormal.x : (_RivuletLockDirection == 1.0 ? v_localNormal.y : v_localNormal.z));
+      vec3 toRotate = vec3(rotator85.x, rotator85.y, 0.0);
+      // 假设已经定义了一个名为Unity_RotateAboutAxis_Degrees_float的自定义GLSL函数;
+      // 如果没有定义该函数，请参考下面的示例代码；
+      Unity_RotateAboutAxis_Degrees_float(toRotate, vec3(0.0, 0.0, 1.0), _RivuletRotation * frontOrBack, toRotate);
+
+      rotator85 = toRotate.xy;
+
+      vec4 break90 = texture(_RivuletMask, rotator85 * _TilingRivulet.xy);
+      vec2 temp_output_126_0 = (vec2(-0.1, 0.0) + (break90.ba - vec2(0.0, 0.0)) * (vec2(0.1, 3.0) - vec2(-0.1, 0.0)) / (vec2(1.0, 1.0) - vec2(0.0, 0.0)));
+      float mulTime92 = cc_time.x *0.1* 0.23;
+      float rest1_ratio102 = (0.0 + (((mulTime92 - floor((mulTime92 + 0.5))) * 2.0) - -1.0) * (1.0 - 0.0) / (1.0 - -1.0));
+      float mulTime132 = cc_time.x *0.1* _RivuletSpeed;
+      float rest2_ratio106 = (0.0 + (((mulTime92 * 1.0 + 0.5) - floor((mulTime92 * 1.0 + 0.5) + 0.5)) * 2.0 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0));
+      float bias114 = pow((0.0 + ((((abs(((mulTime92 - floor((mulTime92 + 0.5))) * 2.0)) * 2.0) - 1.0) + 0.0) - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)), 2.0);
+
+      vec2 appendResult133 = vec2(0.0, mulTime132);
+
+      vec4 lerpResult130 = mix(
+          texture(_RivuletMask, ((temp_output_126_0 * rest1_ratio102) + rotator85 + appendResult133) * _TilingRivulet.xy),
+          texture(_RivuletMask, ((temp_output_126_0 * rest2_ratio106) + rotator85 + appendResult133) * _TilingRivulet.xy), bias114);
+
+      float strength = mix(_RivuletsStrength, 0.0, abs(FSInput_worldNormal.y));
+
+      vec3 rivuletDistortion = (lerpResult130.xyz) * strength;
+
+      rivuletDistortion.z = 0.0;
+
+      return normalWS* 1.0 - rivuletDistortion.xyz * (1.0 - (lerpResult130.r + 0.5));            
+    }
+  #endif
