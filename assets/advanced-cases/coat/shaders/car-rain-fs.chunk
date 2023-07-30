@@ -11,6 +11,7 @@
         _RivuletSpeed: { value: 1.0, editor: { displayName: 水流速度, parent: USE_RIVULET,slide: true, range: [0, 1.0], step: 0.001 } }
         _RivuletsStrength: { value: 1.0, editor: { displayName: 水流表现强度, parent: USE_RIVULET,slide: true, range: [0, 1000.0], step: 0.001 } }
 */
+  // need #define CC_SURFACES_TRANSFER_LOCAL_POS 1
   in mat4 v_matWorldInverse;
   in vec3 v_localNormal;
   #if USE_DROPLETS
@@ -20,51 +21,69 @@
     uniform sampler2D _RivuletMask;
   #endif
   
-  void Unity_RotateAboutAxis_Degrees_float(vec3 point, vec3 axis, float angleDegrees, inout vec3 result) {
-    float angleRad = radians(angleDegrees);
-    float cosAngle = cos(angleRad);
-    float sinAngle = sin(angleRad);
-    vec3 crossProd = cross(axis, point);
-    float dotProd = dot(axis, point);
-    vec3 axisScaled = axis * dotProd * (1.0 - cosAngle);
-    result = point * cosAngle + crossProd * sinAngle + axisScaled;
-  }
-  vec3 UnpackNormalWithScale(vec4 packednormal, float scale)
-  {
-      vec3 outNormal = vec3(0.0);
-      outNormal.xy = (packednormal.xy * 2.0 - 1.0) * scale;
-      outNormal.z = sqrt(1.0 - saturate(dot(outNormal.xy, outNormal.xy)));
-      return outNormal;
-  }
   #include <common/math/transform>
   #if USE_DROPLETS
     vec3 GetDropletNormal(vec3 normalWS)
     {
-      vec4 ase_grabScreenPosNorm = vec4(0.0, 0.0, 0.0, 1.0);
-      vec2 appendResult145 = vec2(0.0, _DropletsGravity);
-      vec2 uv_TexCoord3 = FSInput_texcoord * _TilingDroplet.xy;
-      vec2 panner143 = (1.0 * cc_time.x * 0.1 * appendResult145 + uv_TexCoord3);
-      vec4 tex2DNode2 = texture(_DropletMask, panner143);
-      tex2DNode2.rgb = LinearToSRGB(tex2DNode2.rgb);
-      vec3 ase_worldNormal = normalWS;
-      float dotResult191 = dot(ase_worldNormal, vec3(0.0, 1.0, 0.0));
-      vec4 temp_cast_1 = vec4(1.0);
-      vec4 break171 = ((tex2DNode2 * 2.0) - temp_cast_1);
-      vec4 appendResult172 = vec4(break171.r, break171.g, 0.0, 0.0);
+      vec2 uv = FSInput_texcoord * _TilingDroplet.xy;
+      vec2 uvMoving = (1.0 * cc_time.x * 0.1 * vec2(0.0, _DropletsGravity) + uv);
+      vec4 dropletTex = texture(_DropletMask, uvMoving);
+      dropletTex.rgb = LinearToSRGB(dropletTex.rgb);
+      vec3 normalFromTex = ((dropletTex.rgb * 2.0) - vec3(1.0));
       float mulTime4 = cc_time.x * 0.1 * _DropletsStrikeSpeed;
-      vec4 break201 = (appendResult172 * saturate(ceil((0.0 + ((tex2DNode2.a - fract(((-1.0 + (tex2DNode2.b - 0.0) * (1.0 - -1.0) / (1.0 - 0.0)) + mulTime4))) - (1.0 - _Droplets_Strength)) * (1.0 - 0.0) / (1.0 - (1.0 - _Droplets_Strength))))));
-      vec4 appendResult200 = vec4(break201.xyz, break201.w);
+      vec2 normalOffset = normalFromTex.xy * saturate(ceil(
+        (dropletTex.a - fract(normalFromTex.z + mulTime4) - 1.0) / _Droplets_Strength + 1.0
+        ));
       // no droplet on sides
-      appendResult200 = mix(vec4(0.0), appendResult200, saturate(normalWS.y));
-      vec4 temp_output_41_0_Drop = (ase_grabScreenPosNorm + ((appendResult200) * _Distortion));
-      temp_output_41_0_Drop.z = 0.0;
-      return normalWS - temp_output_41_0_Drop.xyz;
+      normalOffset = mix(vec2(0.0), normalOffset, saturate(normalWS.y));
+      return normalWS - vec3(normalOffset * _Distortion, 0.0);
     }
   #endif
 
   #if USE_RIVULET
     vec3 GetRivuletNormal(vec3 normalWS)
     {
+    #if FIX_RIVULET_DIRECTION 
+      vec3 localPos = FSInput_localPos.xyz;
+      // vec3 BBMin = vec3(-1.75, 0.016, -3.485), BBMax = vec3(1.771, 2.088, 3.441);
+      vec3 BBSize = _BoundingBoxMax.xyz - _BoundingBoxMin.xyz;
+      vec3 posCoef = (localPos - _BoundingBoxMin.xyz) / BBSize;
+      vec3 pos = posCoef * BBSize;
+      //这里的Up要和车模型空间的高轴一致
+      vec3 N = normalize(v_localNormal), Up = vec3(0.0, 1.0, 0.0);
+      vec3 right = normalize(cross(Up, N));
+      vec3 down = normalize(cross(right, N));
+      vec3 forward = normalize(cross(Up, right));
+      vec2 uv;
+      uv.x = abs(dot(posCoef * BBSize, right)); //在同一侧保持方向一致性
+      uv.y = posCoef.y * BBSize.y;
+      /*if(abs(dot(N, Up)) > 0.8)
+      {
+        // uv.x = posCoef.x * BBSize.x;//abs(dot(posCoef * BBSize, forward));
+        // uv.y = posCoef.z * BBSize.z;//abs(dot(posCoef * BBSize, forward));
+      }*/
+      
+      //侧门这个面给一个强制纠正，不至于因为局部形状变化而导致错误
+      //通过旋转参数来控制纠正范围，取决于在模型空间的侧门是x还是z轴
+      //0：都不修正  1-99：修正x两侧  100-199：修正xz四面  200-299：修正z两侧
+      //可以通过mask修正图来纠偏个别异常区域
+      float dir = _RivuletRotation / 100.0;
+      float portion = fract(dir);
+      if(dir < 2.0)
+      {
+        float x_neg = pow(linearstep(0.0, portion, posCoef.x), 2.0);
+        uv.x = mix(pos.z, uv.x, x_neg);
+        float x_pos = pow(linearstep(1.0 - portion, 1.0, posCoef.x), 0.5);
+        uv.x = mix(uv.x, pos.z, x_pos);
+      }
+      if(dir > 1.0)
+      {
+        float z_neg = pow(linearstep(0.0, portion, posCoef.z), 2.0);
+        uv.x = mix(pos.x, uv.x, z_neg);
+        float z_pos = pow(linearstep(1.0 - portion, 1.0, posCoef.z), 0.5);
+        uv.x = mix(uv.x, pos.x, z_pos);
+      }
+    #else
       vec3 scale, pos;
       mat3 rot;
       departWorldMatrix(pos, scale, rot, v_matWorldInverse);
@@ -84,35 +103,32 @@
       ////////////////////////////////////
       float cos85 = cos(_RivuletRotation * Deg2Rad);
       float sin85 = sin(_RivuletRotation * Deg2Rad);
-      vec2 rotator85 = rotator76 * mat2(cos85, -sin85, sin85, cos85);
+      vec2 uv = rotator76 * mat2(cos85, -sin85, sin85, cos85);
       float frontOrBack = abs(_RivuletLockDirection == 0.0 ? v_localNormal.x : (_RivuletLockDirection == 1.0 ? v_localNormal.y : v_localNormal.z));
-      vec3 toRotate = vec3(rotator85.x, rotator85.y, 0.0);
-      // 假设已经定义了一个名为Unity_RotateAboutAxis_Degrees_float的自定义GLSL函数;
-      // 如果没有定义该函数，请参考下面的示例代码；
-      Unity_RotateAboutAxis_Degrees_float(toRotate, vec3(0.0, 0.0, 1.0), _RivuletRotation * frontOrBack, toRotate);
+      vec3 toRotate = RotationVecFromAxis(vec3(uv.x, uv.y, 0.0), vec3(0.0, 0.0, 1.0), _RivuletRotation * frontOrBack);
+      uv = toRotate.xy;
+    #endif
 
-      rotator85 = toRotate.xy;
+      // animated uv
+      vec2 appendResult133 = vec2(0.0, cc_time.x *0.1* _RivuletSpeed);
+      // vec3 normalFromTex = texture(_RivuletMask, (uv + appendResult133) * _TilingRivulet.xy).xyz;
 
-      vec4 break90 = texture(_RivuletMask, rotator85 * _TilingRivulet.xy);
-      vec2 temp_output_126_0 = (vec2(-0.1, 0.0) + (break90.ba - vec2(0.0, 0.0)) * (vec2(0.1, 3.0) - vec2(-0.1, 0.0)) / (vec2(1.0, 1.0) - vec2(0.0, 0.0)));
+      // whirsle
+      vec4 break90 = texture(_RivuletMask, uv * _TilingRivulet.xy);
+      vec2 temp_output_126_0 = vec2(-0.1, 0.0) + break90.ba * vec2(0.2, 3.0);
       float mulTime92 = cc_time.x *0.1* 0.23;
-      float rest1_ratio102 = (0.0 + (((mulTime92 - floor((mulTime92 + 0.5))) * 2.0) - -1.0) * (1.0 - 0.0) / (1.0 - -1.0));
-      float mulTime132 = cc_time.x *0.1* _RivuletSpeed;
-      float rest2_ratio106 = (0.0 + (((mulTime92 * 1.0 + 0.5) - floor((mulTime92 * 1.0 + 0.5) + 0.5)) * 2.0 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0));
-      float bias114 = pow((0.0 + ((((abs(((mulTime92 - floor((mulTime92 + 0.5))) * 2.0)) * 2.0) - 1.0) + 0.0) - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)), 2.0);
+      float rest1_ratio102 = (((mulTime92 - floor(mulTime92 + 0.5)) * 2.0) + 1.0) / 2.0;
+      float rest2_ratio106 = ((mulTime92 + 0.5 - floor(mulTime92 + 1.0)) * 2.0 + 1.0) / 2.0;
+      float absValue = abs((mulTime92 - floor(mulTime92 + 0.5)) * 2.0);
+      float bias114 = pow(absValue, 2.0);
 
-      vec2 appendResult133 = vec2(0.0, mulTime132);
-
-      vec4 lerpResult130 = mix(
-          texture(_RivuletMask, ((temp_output_126_0 * rest1_ratio102) + rotator85 + appendResult133) * _TilingRivulet.xy),
-          texture(_RivuletMask, ((temp_output_126_0 * rest2_ratio106) + rotator85 + appendResult133) * _TilingRivulet.xy), bias114);
-
+      vec3 normalFromTex = mix(
+          texture(_RivuletMask, ((temp_output_126_0 * rest1_ratio102) + uv + appendResult133) * _TilingRivulet.xy).xyz,
+          texture(_RivuletMask, ((temp_output_126_0 * rest2_ratio106) + uv + appendResult133) * _TilingRivulet.xy).xyz, bias114);
+      
+      // output
       float strength = mix(_RivuletsStrength, 0.0, abs(FSInput_worldNormal.y));
-
-      vec3 rivuletDistortion = (lerpResult130.xyz) * strength;
-
-      rivuletDistortion.z = 0.0;
-
-      return normalWS* 1.0 - rivuletDistortion.xyz * (1.0 - (lerpResult130.r + 0.5));            
+      normalFromTex.z = 0.0;
+      return normalize(normalWS - normalFromTex * strength * (0.5 - normalFromTex.r));    
     }
   #endif

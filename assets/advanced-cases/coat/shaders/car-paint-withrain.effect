@@ -45,6 +45,8 @@ CCEffect %{
         _RivuletMask: { value: white, editor: { displayName: 水流纹理, parent: USE_RIVULET} }
         _RivuletSpeed: { value: 1.0, editor: { displayName: 水流速度, parent: USE_RIVULET,slide: true, range: [0, 1.0], step: 0.001 } }
         _RivuletsStrength: { value: 1.0, editor: { displayName: 水流表现强度, parent: USE_RIVULET,slide: true, range: [0, 1000.0], step: 0.001 } }
+        _BoundingBoxMin: { value: [0.0, 0.0, 0.0, 0.0], editor: { displayName: 车辆模型空间包围盒Min, parent: USE_RIVULET } }
+        _BoundingBoxMax: { value: [1.0, 1.0, 1.0, 0.0], editor: { displayName: 车辆模型空间包围盒Max, parent: USE_RIVULET } }
     - &forward-add
       vert: standard-vs
       frag: standard-fs
@@ -156,6 +158,8 @@ CCProgram shared-ubos %{
     float _RivuletLockDirection;
     float _RivuletSpeed;
     float _RivuletsStrength;
+    vec4 _BoundingBoxMin;
+    vec4 _BoundingBoxMax;
   };
 }%
 
@@ -172,6 +176,7 @@ CCProgram macro-remapping %{
   #define CC_SURFACES_LIGHTING_CLEAR_COAT 1
 
   #define CC_SURFACES_USE_TANGENT_SPACE 1
+  #define CC_SURFACES_TRANSFER_LOCAL_POS 1
 }%
 
 CCProgram surface-vertex %{

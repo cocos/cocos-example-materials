@@ -13,7 +13,8 @@
     {
       "USE_FLAKE": true,
       "USE_DROPLETS": true,
-      "USE_RIVULET": true
+      "USE_RIVULET": true,
+      "FIX_RIVULET_DIRECTION": true
     },
     {},
     {},
@@ -117,17 +118,27 @@
         "__uuid__": "3cea7682-b829-4751-9bc5-6644857d0a6b@3c318",
         "__expectedType__": "cc.Texture2D"
       },
-      "_RivuletRotation": 175,
-      "_TilingRivulet": {
-        "__type__": "cc.Vec2",
-        "x": 0.5,
-        "y": 0.5
-      },
+      "_RivuletRotation": 110,
       "_RivuletMask": {
         "__uuid__": "5b190541-f477-4ae5-aede-fabbb9da060d@3c318",
         "__expectedType__": "cc.Texture2D"
       },
-      "_RivuletsStrength": 269.73
+      "_RivuletSpeed": 0.675,
+      "_RivuletsStrength": 167.027,
+      "_BoundingBoxMin": {
+        "__type__": "cc.Vec4",
+        "x": -1.75,
+        "y": 0.016,
+        "z": -3.485,
+        "w": 0
+      },
+      "_BoundingBoxMax": {
+        "__type__": "cc.Vec4",
+        "x": 1.771,
+        "y": 2.088,
+        "z": 3.441,
+        "w": 0
+      }
     },
     {},
     {},
