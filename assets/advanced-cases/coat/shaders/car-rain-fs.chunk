@@ -129,6 +129,7 @@
       // output
       float strength = mix(_RivuletsStrength, 0.0, abs(FSInput_worldNormal.y));
       normalFromTex.z = 0.0;
-      return normalize(normalWS - normalFromTex * strength * (0.5 - normalFromTex.r));    
+      float isFlatten = equalf_epsilon(0.5, normalFromTex.r, 0.015) ? 0.0 : 1.0;
+      return normalize(normalWS - normalFromTex * strength * (0.5 - normalFromTex.r) * isFlatten);
     }
   #endif
