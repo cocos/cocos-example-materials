@@ -18,9 +18,19 @@
     {},
     {},
     {},
+    {},
     {}
   ],
   "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
     {
       "rasterizerState": {},
       "depthStencilState": {},
@@ -71,14 +81,15 @@
     {
       "mainColor": {
         "__type__": "cc.Color",
-        "r": 25,
-        "g": 25,
-        "b": 25,
+        "r": 187,
+        "g": 187,
+        "b": 187,
         "a": 255
       },
-      "specularIntensity": 0.113,
-      "F0": 0.718,
-      "F90": 1,
+      "roughness": 0.01,
+      "specularIntensity": 0.2,
+      "F0": 0.378,
+      "F90": 0.897,
       "gradientColor": {
         "__type__": "cc.Color",
         "r": 0,
@@ -112,6 +123,7 @@
         "w": 0
       }
     },
+    {},
     {},
     {},
     {},
