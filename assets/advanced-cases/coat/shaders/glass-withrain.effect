@@ -109,7 +109,7 @@ CCEffect %{
     passes:
     - vert: standard-vs
       frag: standard-fs
-      embeddedMacros: { CC_FORCE_FORWARD_SHADING: true, CC_SURFACES_USE_TWO_SIDED: true }
+      embeddedMacros: { CC_FORCE_FORWARD_SHADING: true, TECHNIQUE_TWO_SIDE: true }
       rasterizerState:
         cullMode: Front
       properties: &props
@@ -143,7 +143,7 @@ CCEffect %{
       blendState: *b1
     - vert: standard-vs
       frag: standard-fs
-      embeddedMacros: { CC_FORCE_FORWARD_SHADING: true, CC_SURFACES_USE_TWO_SIDED: true }
+      embeddedMacros: { CC_FORCE_FORWARD_SHADING: true, TECHNIQUE_TWO_SIDE: true }
       rasterizerState:
         cullMode: Back
       propertyIndex: 0
@@ -196,6 +196,9 @@ CCProgram macro-remapping %{
 
   #define CC_SURFACES_USE_TANGENT_SPACE 1
   #define CC_SURFACES_TRANSFER_LOCAL_POS 1
+  #if TECHNIQUE_TWO_SIDE
+    #define CC_SURFACES_USE_TWO_SIDED 1
+  #endif
 }%
 
 CCProgram surface-vertex %{
