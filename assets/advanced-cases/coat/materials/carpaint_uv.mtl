@@ -90,8 +90,8 @@
       "coatRoughness": 0.02,
       "coatIOR": 1.2241,
       "flakeDensity": 0.27,
-      "flakeColorIntensity": 0.248,
-      "flakeTiling": 6,
+      "flakeColorIntensity": 0.1,
+      "flakeTiling": 10,
       "gradientColor": {
         "__type__": "cc.Color",
         "r": 114,
