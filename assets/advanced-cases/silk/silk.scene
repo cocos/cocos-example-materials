@@ -1290,6 +1290,7 @@
     "instance": {
       "__id__": 39
     },
+    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -1521,7 +1522,7 @@
     "__type__": "cc.PrefabInfo",
     "root": null,
     "asset": null,
-    "fileId": "b5b97743-fd8b-4638-beb3-2d5a70847505",
+    "fileId": "d1b21e15-7de9-4cb8-a81a-05950185026d",
     "instance": null,
     "targetOverrides": null,
     "nestedPrefabInstanceRoots": [
@@ -1598,7 +1599,7 @@
       "z": 0.6352941176470588,
       "w": 1.982
     },
-    "_skyIllumLDR": 1.982,
+    "_skyIllumLDR": 1.3,
     "_groundAlbedoLDR": {
       "__type__": "cc.Vec4",
       "x": 0.6549019607843137,
@@ -1655,7 +1656,7 @@
       "__uuid__": "7d84e4c5-a0d6-4e54-9d6e-f6c55c698555@b47c0",
       "__expectedType__": "cc.TextureCube"
     },
-    "_enabled": false,
+    "_enabled": true,
     "_useHDR": false,
     "_editableMaterial": null,
     "_reflectionHDR": {
