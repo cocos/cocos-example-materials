@@ -1,0 +1,98 @@
+{
+  "ver": "2.3.8",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "74e7b251-2fd0-4eef-a440-d6cd1bc7e44d",
+  "files": [],
+  "subMetas": {
+    "9a002": {
+      "importer": "gltf-mesh",
+      "uuid": "74e7b251-2fd0-4eef-a440-d6cd1bc7e44d@9a002",
+      "displayName": "",
+      "id": "9a002",
+      "name": "Mesh0.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 108858
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f7779": {
+      "importer": "gltf-material",
+      "uuid": "74e7b251-2fd0-4eef-a440-d6cd1bc7e44d@f7779",
+      "displayName": "",
+      "id": "f7779",
+      "name": "UnnamedMaterial.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ce286": {
+      "importer": "gltf-scene",
+      "uuid": "74e7b251-2fd0-4eef-a440-d6cd1bc7e44d@ce286",
+      "displayName": "",
+      "id": "ce286",
+      "name": "cloth.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "74e7b251-2fd0-4eef-a440-d6cd1bc7e44d@ce286",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "74e7b251-2fd0-4eef-a440-d6cd1bc7e44d@9a002"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "74e7b251-2fd0-4eef-a440-d6cd1bc7e44d@f7779"
+      ],
+      "scenes": [
+        "74e7b251-2fd0-4eef-a440-d6cd1bc7e44d@ce286"
+      ]
+    },
+    "normals": 3
+  }
+}
