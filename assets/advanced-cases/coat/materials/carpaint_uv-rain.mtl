@@ -111,8 +111,8 @@
       },
       "_TilingDroplet": {
         "__type__": "cc.Vec2",
-        "x": 3,
-        "y": 3
+        "x": 5,
+        "y": 5
       },
       "_DropletMask": {
         "__uuid__": "3cea7682-b829-4751-9bc5-6644857d0a6b@3c318",

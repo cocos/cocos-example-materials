@@ -12,7 +12,10 @@
         _RivuletsStrength: { value: 1.0, editor: { displayName: 水流表现强度, parent: USE_RIVULET,slide: true, range: [0, 1000.0], step: 0.001 } }
 */
   // need #define CC_SURFACES_TRANSFER_LOCAL_POS 1
-  in mat4 v_matWorldInverse;
+  in vec4 v_matWorldInverse0;
+  in vec4 v_matWorldInverse1;
+  in vec4 v_matWorldInverse2;
+  in vec4 v_matWorldInverse3;
   in vec3 v_localNormal;
   #if USE_DROPLETS
     uniform sampler2D _DropletMask;
@@ -85,8 +88,12 @@
       }
     #else
       vec3 scale, pos;
-      mat3 rot;
-      departWorldMatrix(pos, scale, rot, v_matWorldInverse);
+      mat3 rot, mat;
+      mat[0] = v_matWorldInverse0;
+      mat[1] = v_matWorldInverse1;
+      mat[2] = v_matWorldInverse2;
+      mat[3] = v_matWorldInverse3;
+      departWorldMatrix(pos, scale, rot, mat);
       vec3 map = rot * FSInput_worldPos + pos;
       vec3 norm = rot * normalWS;
       const float Deg2Rad = 0.0174532925;

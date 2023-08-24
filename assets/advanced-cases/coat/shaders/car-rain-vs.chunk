@@ -1,5 +1,8 @@
   #include <common/math/number>
-  out mat4 v_matWorldInverse;
+  out vec4 v_matWorldInverse0;
+  out vec4 v_matWorldInverse1;
+  out vec4 v_matWorldInverse2;
+  out vec4 v_matWorldInverse3;
   out vec3 v_localNormal;
 
   #define CC_SURFACES_VERTEX_MODIFY_SHADOW_BIAS
@@ -7,7 +10,11 @@
   {
     mat4 matWorld, matWorldIT;
     CCGetWorldMatrixFull(matWorld, matWorldIT);
-    v_matWorldInverse = transpose(matWorldIT);
+    mat4 mat = transpose(matWorldIT);
+    v_matWorldInverse0 = mat[0];
+    v_matWorldInverse1 = mat[1];
+    v_matWorldInverse2 = mat[2];
+    v_matWorldInverse3 = mat[3];
     v_localNormal = normalize(In.normal);
 
     return originShadowBias + vec2(emissiveScaleParam.z, 0.0);
