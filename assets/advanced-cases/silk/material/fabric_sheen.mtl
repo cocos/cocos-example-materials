@@ -97,6 +97,7 @@
         "__uuid__": "85d73936-15d2-4fb9-84b3-ed6fac502a93@6c48a",
         "__expectedType__": "cc.Texture2D"
       },
+      "sheenRoughness": 0.5,
       "sheenColorMap": {
         "__uuid__": "f27b97ad-8daa-47a5-981d-35d41f1e369c@6c48a",
         "__expectedType__": "cc.Texture2D"
