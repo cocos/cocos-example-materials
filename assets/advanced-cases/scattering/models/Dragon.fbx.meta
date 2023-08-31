@@ -1,0 +1,82 @@
+{
+  "ver": "2.3.12",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "53cb8276-ea54-4d87-a6b3-8e1e46684134",
+  "files": [],
+  "subMetas": {
+    "51706": {
+      "importer": "gltf-scene",
+      "uuid": "53cb8276-ea54-4d87-a6b3-8e1e46684134@51706",
+      "displayName": "",
+      "id": "51706",
+      "name": "Dragon.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4cc76": {
+      "importer": "gltf-mesh",
+      "uuid": "53cb8276-ea54-4d87-a6b3-8e1e46684134@4cc76",
+      "displayName": "",
+      "id": "4cc76",
+      "name": "C:\\Users\\Administrator\\Desktop\\Dragon.mm.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 2349078
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "fbx": {
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
+    },
+    "redirect": "53cb8276-ea54-4d87-a6b3-8e1e46684134@51706",
+    "assetFinder": {
+      "meshes": [
+        "53cb8276-ea54-4d87-a6b3-8e1e46684134@4cc76"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "53cb8276-ea54-4d87-a6b3-8e1e46684134@51706"
+      ]
+    },
+    "normals": 3,
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    }
+  }
+}
