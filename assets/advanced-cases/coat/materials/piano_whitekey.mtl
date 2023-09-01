@@ -77,9 +77,16 @@
   ],
   "_props": [
     {
-      "roughness": 1,
-      "coatRoughness": 0,
-      "coatIntensity": 0.5
+      "mainColor": {
+        "__type__": "cc.Color",
+        "r": 240,
+        "g": 240,
+        "b": 229,
+        "a": 255
+      },
+      "roughness": 0.54,
+      "coatRoughness": 0.0341,
+      "coatIOR": 1.028
     },
     {},
     {},
