@@ -79,14 +79,15 @@
     {
       "mainColor": {
         "__type__": "cc.Color",
-        "r": 240,
-        "g": 240,
-        "b": 229,
+        "r": 255,
+        "g": 255,
+        "b": 238,
         "a": 255
       },
-      "roughness": 0.54,
-      "coatRoughness": 0.0341,
-      "coatIOR": 1.0308
+      "roughness": 1,
+      "coatRoughness": 0.1,
+      "coatIOR": 1.0308,
+      "coatIntensity": 2
     },
     {},
     {},

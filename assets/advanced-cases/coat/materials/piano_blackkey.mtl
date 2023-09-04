@@ -19,7 +19,9 @@
   ],
   "_states": [
     {
-      "rasterizerState": {},
+      "rasterizerState": {
+        "cullMode": 0
+      },
       "depthStencilState": {},
       "blendState": {
         "targets": [
@@ -82,7 +84,9 @@
         "b": 0,
         "a": 255
       },
-      "coatRoughness": 0.0341
+      "roughness": 1,
+      "coatRoughness": 0.0556,
+      "coatIOR": 1.3438
     },
     {},
     {},
